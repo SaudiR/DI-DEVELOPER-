@@ -187,15 +187,16 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Posts    |    H     |   5 hrs      |   TBD      |    TBD    |
+| Create Posts    |    H     |   6 hrs      |   TBD      |    TBD    |
 | Create comment sections |    H     |   6 hrs  |   TBD      |     TBD     |
-|Create /style Nav  |    H      |  2 hrs      |   TBD       |     TBD     |
-|Create/style Footer  |  L | 2hrs    |  TBD   |      TBD          |             |
-|Create Login page   |  H | 3hrs        |    TBD      |  TBD     |             |
-|Create sign up page |  H | 3hrs  |      TBD    |     TBD     |             |
-|Add full CRUD to comments | H | 3hrs    |      TBD  |   TBD      |
+|Create /style Nav  |    H      |  4 hrs      |   TBD       |     TBD     |
+|Create/style Footer  |  L | 4hrs    |  TBD   |      TBD          |             |
+|Create Login page   |  H | 4hrs        |    TBD      |  TBD     |             |
+|Create sign up page |  H | 4hrs  |      TBD    |     TBD     |             |
+|Add full CRUD to comments | H | 6hrs    |      TBD  |   TBD      |
 | Style using css/flexbox |  H | 9hrs    |      TBD    |    TBD      |
-| Build ruby on rails server | H | 4hrs | TBD | TBD |     |
+| Build ruby on rails server | H | 6hrs | TBD | TBD |     |
+| TOTAL | - | 49hrs | TBD | TBD |   |
 
 
 <br>
