@@ -195,6 +195,7 @@ src
 |Create sign up page |  H | 3hrs  |      TBD    |     TBD     |             |
 |Add full CRUD to comments | H | 3hrs    |      TBD  |   TBD      |
 | Style using css/flexbox |  H | 9hrs    |      TBD    |    TBD      |
+| Build ruby on rails server | H | 4hrs | TBD | TBD |     |
 
 
 <br>
@@ -211,7 +212,11 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Allow users to add their own posts.
+- Allow users to save posts that they like to their account.
+- Allow users to choose through catergories. 
+- Allow users to have the option to request a blog post subject.
+  
 
 ***
 
