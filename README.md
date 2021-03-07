@@ -206,7 +206,7 @@ src
 ### ERD Model
 
 
-![ERD Sample](https://i.imgur.com/J6QLWxC.png[/img])
+![ERD Sample](https://i.imgur.com/HK6YqiV.png[/img])
 <br>
 
 ***
