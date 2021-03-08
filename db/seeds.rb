@@ -11,7 +11,7 @@ User.destroy_all
 
 @ruby = User.create!(username: "ruby", email:"ruby@email.com", password: "123456")
 
-puts "#{User.count}" user created"
+puts "#{User.count} user created"
 
 @HTML = Post.create!(
   title: "HTML", 
@@ -27,7 +27,7 @@ puts "#{User.count}" user created"
 
 @Javascript = Post.create!(
   title: "Javascript", 
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet. Morbi blandit cursus risus at. Blandit libero volutpat sed cras ornare arcu. Dignissim convallis aenean et tortor at risus viverra adipiscing. Fermentum posuere urna nec tincidunt praesent. Urna id volutpat lacus laoreet non curabitur. Id donec ultrices tincidunt arcu non. Rhoncus urna neque viverra justo nec ultrices. Mauris nunc congue nisi vitae suscipit. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Urna nec tincidunt praesent semper feugiat. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Faucibus et molestie ac feugiat. Suspendisse in est ante in nibh mauris. Et tortor at risus viverra adipiscing at in."
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet. Morbi blandit cursus risus at. Blandit libero volutpat sed cras ornare arcu. Dignissim convallis aenean et tortor at risus viverra adipiscing. Fermentum posuere urna nec tincidunt praesent. Urna id volutpat lacus laoreet non curabitur. Id donec ultrices tincidunt arcu non. Rhoncus urna neque viverra justo nec ultrices. Mauris nunc congue nisi vitae suscipit. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Urna nec tincidunt praesent semper feugiat. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Faucibus et molestie ac feugiat. Suspendisse in est ante in nibh mauris. Et tortor at risus viverra adipiscing at in.",
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F1200px-Unofficial_JavaScript_logo_2.svg.png&f=1&nofb=1"
   )
 
@@ -43,7 +43,7 @@ puts "#{User.count}" user created"
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.teamtreehouse.com%2Fwp-content%2Fuploads%2F2017%2F08%2Freact-logo.png&f=1&nofb=1"
   )
 
-@Express Framework = Post.create!(
+@Express_Framework = Post.create!(
   title: "Express Framework", 
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet. Morbi blandit cursus risus at. Blandit libero volutpat sed cras ornare arcu. Dignissim convallis aenean et tortor at risus viverra adipiscing. Fermentum posuere urna nec tincidunt praesent. Urna id volutpat lacus laoreet non curabitur. Id donec ultrices tincidunt arcu non. Rhoncus urna neque viverra justo nec ultrices. Mauris nunc congue nisi vitae suscipit. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Urna nec tincidunt praesent semper feugiat. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Faucibus et molestie ac feugiat. Suspendisse in est ante in nibh mauris. Et tortor at risus viverra adipiscing at in.", 
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F730%2F1*d2zLEjERsrs1Rzk_95QU9A.png&f=1&nofb=1"
@@ -55,7 +55,7 @@ puts "#{User.count}" user created"
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcommunity.microstrategy.com%2Fservlet%2FrtaImage%3Feid%3Dka02R000000kcTI%26feoid%3D00N44000006DfHE%26refid%3D0EM440000002Jgk&f=1&nofb=1"
   )
 
-@Ruby on Rails = Post.create!(
+@Ruby_on_Rails = Post.create!(
   title: "Ruby on Rails", 
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet. Morbi blandit cursus risus at. Blandit libero volutpat sed cras ornare arcu. Dignissim convallis aenean et tortor at risus viverra adipiscing. Fermentum posuere urna nec tincidunt praesent. Urna id volutpat lacus laoreet non curabitur. Id donec ultrices tincidunt arcu non. Rhoncus urna neque viverra justo nec ultrices. Mauris nunc congue nisi vitae suscipit. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Urna nec tincidunt praesent semper feugiat. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Faucibus et molestie ac feugiat. Suspendisse in est ante in nibh mauris. Et tortor at risus viverra adipiscing at in.",
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fidroot.us%2Fwp-content%2Fuploads%2F2016%2F09%2Fruby_and_rails_logo.jpg&f=1&nofb=1"
