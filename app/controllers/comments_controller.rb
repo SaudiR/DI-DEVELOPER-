@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :set_comment, only: :show
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /comments
   def index
@@ -10,13 +11,13 @@ class CommentsController < ApplicationController
 
   # GET /comments/1
   def show
-    render json: @comment
+    render json: @comment, include: :posts
   end
 
   # POST /comments
   def create
     @comment = Comment.new(comment_params)
-
+    @comment.user = @current_user
     if @comment.save
       render json: @comment, status: :created, location: @comment
     else
@@ -26,6 +27,7 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
+    @comment = @current_user.comments.find(params[:id])
     if @comment.update(comment_params)
       render json: @comment
     else
@@ -35,6 +37,7 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
+    @comment = @current_user.comments.find(params[:id])
     @comment.destroy
   end
 
