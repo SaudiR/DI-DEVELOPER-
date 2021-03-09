@@ -67,42 +67,50 @@ puts "#{User.count} user created"
 
   @Nice = Comment.create!(
     post: @HTML,
-    content: "Nice!"
+    content: "Nice!",
+    user: @ruby
   )
 
   @Good_read = Comment.create!(
     post: @CSS,
-    content: "Good read"
+    content: "Good read",
+    user: @ruby
   )
 
   @great_job = Comment.create!(
     post: @Git,
-    content: "great job"
+    content: "great job",
+    user: @ruby
   )
 
   @Very_cool = Comment.create!(
     post: @Javascript,
-    content: "Very cool"
+    content: "Very cool",
+    user: @ruby
   )
 
   @Great_post = Comment.create!(
     post: @React,
-    content: " Great post"
+    content: " Great post",
+    user: @ruby
   )
 
   @Nice_work = Comment.create!(
     post: @Express_Framework,
-    content: "Nice work"
+    content: "Nice work",
+    user: @ruby
   )
 
   @Wow = Comment.create!(
     post: @MongoDB,
-    content: "Wow!"
+    content: "Wow!",
+    user: @ruby
   )
 
   @Thanks_for_sharing = Comment.create!(
     post: @Ruby_on_Rails,
-    content: "Thanks for sharing! "
+    content: "Thanks for sharing! ",
+    user: @ruby
   )
 
   puts "#{Comment.count} comments created"
