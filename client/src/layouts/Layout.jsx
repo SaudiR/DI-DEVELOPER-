@@ -15,14 +15,17 @@ export default function Layout(props) {
               <button onClick={handleLogout}>Logout</button>
             </>
             :
-            <Link to='/login'>Login/Register</Link>
+            <>
+              <Link to='/login'>Login</Link>
+              <Link to='/register'>Register</Link>
+            </>
         }
         <hr />
         {
           currentUser &&
           <>
-            <Link to='/foods'>Foods</Link>
-            <Link to='/flavors'>Flavors</Link>
+            {/* <Link to='/foods'>Foods</Link>
+            <Link to='/flavors'>Flavors</Link> */}
             <hr />
           </>
         }

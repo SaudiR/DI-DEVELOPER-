@@ -8,6 +8,7 @@
 
 Post.destroy_all 
 User.destroy_all
+Comment.destroy_all
 
 @ruby = User.create!(username: "ruby", email:"ruby@email.com", password: "123456")
 
@@ -62,3 +63,48 @@ puts "#{User.count} user created"
   )
 
   puts "#{Post.count} posts created"
+
+
+  @Nice = Comment.create!(
+    post: @HTML,
+    content: "Nice!"
+  )
+
+  @Good_read = Comment.create!(
+    post: @CSS,
+    content: "Good read"
+  )
+
+  @great_job = Comment.create!(
+    post: @Git,
+    content: "great job"
+  )
+
+  @Very_cool = Comment.create!(
+    post: @Javascript,
+    content: "Very cool"
+  )
+
+  @Great_post = Comment.create!(
+    post: @React,
+    content: " Great post"
+  )
+
+  @Nice_work = Comment.create!(
+    post: @Express_Framework,
+    content: "Nice work"
+  )
+
+  @Wow = Comment.create!(
+    post: @MongoDB,
+    content: "Wow!"
+  )
+
+  @Thanks_for_sharing = Comment.create!(
+    post: @Ruby_on_Rails,
+    content: "Thanks for sharing! "
+  )
+
+  puts "#{Comment.count} comments created"
+
+  
