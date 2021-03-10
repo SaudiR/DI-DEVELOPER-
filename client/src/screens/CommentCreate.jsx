@@ -20,8 +20,9 @@ console.log(handleCreate)
   return (
     <form onSubmit={(e)=>{
       e.preventDefault();
-      handleCreate({ ...formData, user_id: currentUser.id, post_id: postId });
-      history.push(`/posts/${postId}`)
+      handleCreate({ ...formData, user_id: currentUser?.id, post_id: postId });
+      // history.push(`/posts/${postId}`)
+    
     }}>
       <h3>Add Comment</h3>
       <label>
@@ -35,7 +36,7 @@ console.log(handleCreate)
         />
       </label>
       <br />
-      <Link to='/posts'><button>Submit</button></Link>
+      <button>Submit</button>
     </form>
   )
 }

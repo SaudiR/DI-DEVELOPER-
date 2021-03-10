@@ -7,9 +7,9 @@ export default function CommentEdit(props) {
     content: ''
   });
   const { content } = formData;
-  const { comments, handleUpdate } = props;
+  const { comments, handleUpdate, handleDelete } = props;
   const { id } = useParams();
-
+console.log(handleDelete)
   useEffect(() => {
     const prefillFormData = () => {
       const commentPost = comments.find((comment) => comment.id === Number(id));
@@ -48,7 +48,7 @@ export default function CommentEdit(props) {
       </label>
       <br />
       <Link to='/Posts'><button>Save Comment</button></Link>
-      <Link to='/Posts'><button>Delete Comment</button></Link>
+      <button onClick={(id)=>handleDelete(id)}>Delete Comment</button>
     </form>
   )
 }

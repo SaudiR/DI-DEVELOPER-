@@ -40,7 +40,7 @@ export default function MainContainer(props) {
   const handleDelete = async (id) => {
     await destroyComment(id);
     setComments(prevState => prevState.filter((comment) => comment.id !== id))
-  }
+  } 
 
   const handleUpdate = async (id, formData) => {
     const updatedComment = await putComment(id, formData);
@@ -64,10 +64,12 @@ export default function MainContainer(props) {
           posts={posts}
         />
       </Route>
-      <Route path='/commentEdit'>
+      <Route path='/commentEdit/:id'>
         <CommentEdit
           comments={comments}
           handleUpdate={handleUpdate}
+          currentUser={currentUser}
+          handleDelete={handleDelete}
         />
       </Route>
       <Route path='/posts/:id'>

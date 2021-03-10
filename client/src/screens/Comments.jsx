@@ -3,8 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import CommentCreate from './CommentCreate';
 
 export default function Comments(props) {
-  const { comments, handleDelete, currentUser, id } = props;
-  const {postsId}  = useParams()
+  const { comments, handleDelete, currentUser, id, handleCreate } = props;
+  
   console.log(id)
   return (
     <div>
@@ -12,7 +12,7 @@ export default function Comments(props) {
       <>
       {comments && comments.filter((comment) => comment.post_id === Number(id)).map((comment) => (
         <React.Fragment key={comment.id}>
-         <Link to='/commentEdit'> <p>{comment.content}</p> </Link>
+          <Link to={`/commentEdit/${comment.id}`}> <p>{comment.content}</p> </Link>
       
           {comment.user_id === currentUser?.id &&
             <>
@@ -25,7 +25,10 @@ export default function Comments(props) {
         </>
       <br />
       {/* <button>Add Comment</button> */}
-      <CommentCreate postId={id}/>
+      <CommentCreate
+        postId={id} 
+        handleCreate={handleCreate}
+        />
     </div>
   )
 }
