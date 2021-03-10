@@ -1,15 +1,9 @@
-div.allPosts img {
-  justify-content: center;
-  align-items: center;
+img {
+  display: flex;
+  justify-content: center, space-evenly;
   align-self: center;
-  height: 23%;
-  width: 23%;
-  margin: 15px;
-  padding: 10px 10px 10px 10px;
-}
-
-.allPosts img {
-  height: 23%;
-  width: 23%;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 30vh;
 }

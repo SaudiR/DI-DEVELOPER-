@@ -1,26 +1,9 @@
-.post-image img{
-  text-align: center;
-  border: 1px solid #808080;
-  position: relative;
-  height: 23%;
-  width: 23%;
+h3.post-image {
+  display: flex;
+  justify-content: center;
 }
 
-/* .post-title {
-  font-size: 15px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Sora', sans-serif;
-  font-weight: bold;
-  padding: 10px;
+h3.post-title { 
+  display: flex;
+  justify-content: left;
 }
-
-.post-content {
-  text-decoration: none;
-  text-align: center;
-  align-self: flex-start;
-  height: 23%;
-  width: 23%;
-  margin: 15px;
-  padding: 10px 10px 10px 10px;
-} */

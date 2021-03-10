@@ -7,12 +7,12 @@ export default function Layout(props) {
   return (
     <div className="App">
       <header>
-        <Link to='/'><h1>Di_Developer</h1></Link>
+        <Link to='/'><h1 className='app-title'>Di_Developer</h1></Link>
         {
           currentUser ?
             <>
-              <p>{currentUser.username}</p>
-              <button onClick={handleLogout}>Logout</button>
+              <p className='user-name'>{currentUser.username}</p>
+              <button className='logout-button' onClick={handleLogout}>Logout</button>
             </>
             :
             <>

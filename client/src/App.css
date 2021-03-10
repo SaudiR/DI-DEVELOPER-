@@ -1,26 +1,6 @@
-header {
-  font-family: 'Sora', sans-serif;
-  display: inline-flex;  
-  justify-content: space-between;  
-  align-content: center;
-  width: 100%; 
-  flex-direction: flex-end;
-  background-color: brown;
-  border-bottom: 1px solid black;
-  color: black;
-} 
-
-body {
-  background-color: antiquewhite;
+App {
+  text-align: center;
 }
 
-div.allPosts img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  height: 23%;
-  width: 23%;
-}
 
 

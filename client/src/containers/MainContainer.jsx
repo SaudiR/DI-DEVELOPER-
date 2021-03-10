@@ -14,7 +14,6 @@ export default function MainContainer(props) {
   const [posts, setPosts] = useState([]);
   const { currentUser } = props;
   const history = useHistory();
-  console.log(comments)
 
   useEffect(() => {
     const fetchComments = async () => {
@@ -35,7 +34,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const newComment = await postComment(formData);
     setComments(prevState => [...prevState, newComment]);
-    history.push('/comments');
+    history.push('/posts');
   }
 
   const handleDelete = async (id) => {
@@ -58,9 +57,14 @@ export default function MainContainer(props) {
         <Redirect to='/' />
       } */}
       <Route path='/commentCreate'>
-        <CommentCreate handleCreate={handleCreate} />
+        <CommentCreate
+          handleCreate={handleCreate} 
+          comments={comments}
+          currentUser={currentUser}
+          posts={posts}
+        />
       </Route>
-      <Route path='/comments/:id/edit'>
+      <Route path='/commentEdit'>
         <CommentEdit
           comments={comments}
           handleUpdate={handleUpdate}

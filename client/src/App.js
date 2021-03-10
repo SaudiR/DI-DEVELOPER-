@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import './Assets/Header.css';
 import { Switch, Route, useHistory } from 'react-router-dom';
 
 import Layout from './layouts/Layout';

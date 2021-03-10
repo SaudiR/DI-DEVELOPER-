@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ export default function CommentEdit(props) {
     const prefillFormData = () => {
       const commentPost = comments.find((comment) => comment.id === Number(id));
       setFormData({
-        content: commentPost.name
+        content: commentPost
       });
     }
     if (comments.length) {
@@ -35,8 +36,10 @@ export default function CommentEdit(props) {
       handleUpdate(id, formData);
     }}>
       <h3>Edit Comment</h3>
-      <label>content:
-        <input
+      <label>Comment:
+        <textarea
+          rows={10}
+          cols={78}
           type='text'
           name='content'
           value={content}
@@ -44,7 +47,8 @@ export default function CommentEdit(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <Link to='/Posts'><button>Save Comment</button></Link>
+      <Link to='/Posts'><button>Delete Comment</button></Link>
     </form>
   )
 }

@@ -1,28 +1,33 @@
 import { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom'
 
 export default function CommentCreate(props) {
   const [formData, setFormData] = useState({
     content: ''
   });
   const { content} = formData;
-  const { handleCreate } = props;
-
+  const { handleCreate, currentUser, postId} = props; 
+  const history = useHistory()
+console.log(postId)
   const handleChange = (e) => {
-    const { content, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [content]: value
+    const { name, value } = e.target;
+    setFormData(formData => ({
+      ...formData,
+      [name]: value
     }))
   }
 
   return (
     <form onSubmit={(e)=>{
       e.preventDefault();
-      handleCreate(formData);
+      handleCreate({ ...formData, user_id: currentUser.id });
+      history.push()
     }}>
       <h3>Add Comment</h3>
       <label>
         <textarea
+          rows={10}
+          cols={78}
           type='text'
           name='content'
           value={content}
@@ -30,7 +35,7 @@ export default function CommentCreate(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <Link to='/posts'><button>Submit</button></Link>
     </form>
   )
 }
