@@ -1,20 +1,22 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
     content: ''
   });
+  const history = useHistory()
   const { content } = formData;
   const { comments, handleUpdate, handleDelete } = props;
   const { id } = useParams();
-console.log(handleDelete)
+  const commentPost = comments.find((comment) => comment.id === Number(id));
+  console.log(commentPost)
   useEffect(() => {
     const prefillFormData = () => {
       const commentPost = comments.find((comment) => comment.id === Number(id));
       setFormData({
-        content: commentPost
+        content: commentPost.content
       });
     }
     if (comments.length) {
@@ -34,7 +36,8 @@ console.log(handleDelete)
     <>
     <form onSubmit={(e) => {
       e.preventDefault();
-      handleUpdate(id, formData);
+        handleUpdate(id, formData);
+        history.push(`/posts/${commentPost.post_id}`)
     }}>
       <h3>Edit Comment</h3>
       <label>Comment:
@@ -47,9 +50,9 @@ console.log(handleDelete)
           onChange={handleChange}
         />
       </label>
-      <br />
+        <br />
+        <button>Save Comment</button>
       </form>
-    <Link to='/Posts'><button>Save Comment</button></Link>
       <button onClick={() => handleDelete(id)}>Delete Comment</button>
   </>
   )
