@@ -8,11 +8,13 @@ class PostsController < ApplicationController
     render json: @posts
   end
 
-#   # GET /posts/1
-#   def show
-#     render json: @post
-#   end
 
+  # GET /posts/1
+  def show
+    @post = Post.find(params[:id])
+    render json: @post
+  end
+end
 #   # POST /posts
 #   def create
 #     @post = Post.new(post_params)

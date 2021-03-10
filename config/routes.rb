@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :comments
-  resources :posts, only: :index
+  resources :posts, only: [:index, :show]
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
   
