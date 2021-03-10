@@ -20,17 +20,10 @@ export default function Layout(props) {
               <Link to='/register'>Register</Link>
             </>
         }
-        <hr /> 
+
         <>
         <Link to='/posts'>Posts</Link>
-        {
-          currentUser &&
-          <>
-            
-            <Link to='/comments'>Comments</Link>
-            <hr />
-          </>
-          }
+        
           </>
       </header>
       {props.children}

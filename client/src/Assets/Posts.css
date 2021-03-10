@@ -1,0 +1,15 @@
+div.allPosts img {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 23%;
+  width: 23%;
+  margin: 15px;
+  padding: 10px 10px 10px 10px;
+}
+
+.allPosts img {
+  height: 23%;
+  width: 23%;
+  align-items: center;
+}

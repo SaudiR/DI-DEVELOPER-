@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    content: ''
   });
-  const { name } = formData;
+  const { content } = formData;
   const { comments, handleUpdate } = props;
   const { id } = useParams();
 
@@ -13,7 +13,7 @@ export default function CommentEdit(props) {
     const prefillFormData = () => {
       const commentPost = comments.find((comment) => comment.id === Number(id));
       setFormData({
-        name: commentPost.name
+        content: commentPost.name
       });
     }
     if (comments.length) {
@@ -22,10 +22,10 @@ export default function CommentEdit(props) {
   }, [comments, id])
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { content, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [content]: value
     }))
   }
 
@@ -35,11 +35,11 @@ export default function CommentEdit(props) {
       handleUpdate(id, formData);
     }}>
       <h3>Edit Comment</h3>
-      <label>Name:
+      <label>content:
         <input
           type='text'
-          name='name'
-          value={name}
+          name='content'
+          value={content}
           onChange={handleChange}
         />
       </label>

@@ -8,11 +8,13 @@ import CommentCreate from '../screens/CommentCreate';
 import CommentEdit from '../screens/CommentEdit';
 import PostDetail from '../screens/PostDetail'; 
 
+
 export default function MainContainer(props) {
   const [comments, setComments] = useState([]);
   const [posts, setPosts] = useState([]);
   const { currentUser } = props;
   const history = useHistory();
+  console.log(comments)
 
   useEffect(() => {
     const fetchComments = async () => {
@@ -55,7 +57,7 @@ export default function MainContainer(props) {
         !currentUser &&
         <Redirect to='/' />
       } */}
-      <Route path='/comments/new'>
+      <Route path='/commentCreate'>
         <CommentCreate handleCreate={handleCreate} />
       </Route>
       <Route path='/comments/:id/edit'>
@@ -65,9 +67,9 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path='/posts/:id'>
-        <PostDetail posts={posts} />
+        <PostDetail posts={posts} comments={comments}/>
       </Route>
-      <Route path='/comments'>
+      <Route path='/comments/id'>
         <Comments
           comments={comments}
           currentUser={currentUser}

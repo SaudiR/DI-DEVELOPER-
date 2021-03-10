@@ -2,16 +2,16 @@ import { useState } from 'react';
 
 export default function CommentCreate(props) {
   const [formData, setFormData] = useState({
-    name: ''
+    content: ''
   });
-  const { name } = formData;
+  const { content} = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { content, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [content]: value
     }))
   }
 
@@ -20,12 +20,12 @@ export default function CommentCreate(props) {
       e.preventDefault();
       handleCreate(formData);
     }}>
-      <h3>CreateComment</h3>
-      <label>Name:
-        <input
+      <h3>Add Comment</h3>
+      <label>
+        <textarea
           type='text'
-          name='name'
-          value={name}
+          name='content'
+          value={content}
           onChange={handleChange}
         />
       </label>

@@ -18,6 +18,7 @@ export default function Register(props) {
   }
 
   return (
+    <div className="register-form">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleRegister(formData);
@@ -54,6 +55,7 @@ export default function Register(props) {
       </label>
       <br />
       <button>Submit</button>
-    </form>
+      </form>
+      </div>
   )
 }
