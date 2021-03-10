@@ -40,6 +40,7 @@ export default function MainContainer(props) {
   const handleDelete = async (id) => {
     await destroyComment(id);
     setComments(prevState => prevState.filter((comment) => comment.id !== id))
+    history.push("/posts")
   } 
 
   const handleUpdate = async (id, formData) => {
@@ -47,7 +48,7 @@ export default function MainContainer(props) {
     setComments(prevState => prevState.map((comment) => {
       return comment.id === Number(id) ? updatedComment : comment
     }));
-    history.push('/comments');
+    // history.push('/comments');
   }
 
   return (

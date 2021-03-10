@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: :show
+  before_action :set_comment, only: [:show, :destroy, :update]
   before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /comments
@@ -37,7 +37,6 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
-    @comment = @current_user.comments.find(params[:id])
     @comment.destroy
   end
 

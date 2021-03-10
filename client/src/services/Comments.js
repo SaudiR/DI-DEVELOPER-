@@ -21,6 +21,6 @@ export const putComment = async (id, commentData) => {
 }
 
 export const destroyComment = async (id) => {
-  const resp = await api.delete(`/comment/${id}`);
+  const resp = await api.delete(`/comments/${id}`);
   return resp;
 }

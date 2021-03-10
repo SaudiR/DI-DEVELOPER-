@@ -23,14 +23,15 @@ console.log(handleDelete)
   }, [comments, id])
 
   const handleChange = (e) => {
-    const { content, value } = e.target;
+    const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [content]: value
+      [name]: value
     }))
   }
 
   return (
+    <>
     <form onSubmit={(e) => {
       e.preventDefault();
       handleUpdate(id, formData);
@@ -47,8 +48,9 @@ console.log(handleDelete)
         />
       </label>
       <br />
-      <Link to='/Posts'><button>Save Comment</button></Link>
-      <button onClick={(id)=>handleDelete(id)}>Delete Comment</button>
-    </form>
+      </form>
+    <Link to='/Posts'><button>Save Comment</button></Link>
+      <button onClick={() => handleDelete(id)}>Delete Comment</button>
+  </>
   )
 }

@@ -14,12 +14,12 @@ export default function Comments(props) {
         <React.Fragment key={comment.id}>
           <Link to={`/commentEdit/${comment.id}`}> <p>{comment.content}</p> </Link>
       
-          {comment.user_id === currentUser?.id &&
+          {/* {comment.user_id === currentUser?.id &&
             <>
               <Link to={`/comments/${comment.id}/edit`}><button>edit</button></Link>
               <button onClick={() => handleDelete(comment.id)}>delete</button>
             </>
-          }
+          } */}
         </React.Fragment>
       ))}
         </>
