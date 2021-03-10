@@ -18,7 +18,9 @@ export default function PostDetail(props) {
 
   return (
     <div>
+      <h3> <img src={post?.image_url} /> </h3>
       <h3>{post?.title}</h3>
+      <h3>{post?.content}</h3>
     </div>
   )
 }
