@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory, Redirect } from 'react-router-dom';
-import { destroyComment, getAllComments, postComment, putComment } from '../services/Comments1';
-import { getAllPosts } from '../services/Posts1';
+import { destroyComment, getAllComments, postComment, putComment } from '../services/Comments';
+import { getAllPosts } from '../services/Posts';
 import Comments from '../screens/Comments';
 import Posts from '../screens/Posts';
 import CommentCreate from '../screens/CommentCreate';

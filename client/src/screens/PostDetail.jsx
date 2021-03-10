@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getOnePost } from '../services/Posts1';
+import { getOnePost } from '../services/Posts';
 import '../Assets/PostDetail.css';
 import Comments from '../screens/Comments';
 import { Link } from 'react-router-dom';
