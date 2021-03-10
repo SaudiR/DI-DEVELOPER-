@@ -10,7 +10,7 @@ export default function PostDetail(props) {
   const [post, setPost] = useState(null);
   
   const { id } = useParams();
-  const { comments } = props
+  const { comments, handleCreate } = props
   
   useEffect(() => {
     const fetchPostData = async () => {
@@ -25,7 +25,7 @@ export default function PostDetail(props) {
       <h3 className="post-image"> <img src={post?.image_url} /> </h3>
       <h3 className="post-title">{post?.title}</h3>
       <h3 className="post-content">{post?.content}</h3>
-      <Comments id={id} comments={comments}/>
+      <Comments id={id} comments={comments} handleCreate={handleCreate}/>
     </div>
   )
 }

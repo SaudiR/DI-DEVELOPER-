@@ -34,7 +34,7 @@ export default function MainContainer(props) {
   const handleCreate = async (formData) => {
     const newComment = await postComment(formData);
     setComments(prevState => [...prevState, newComment]);
-    history.push('/posts');
+    // history.push('/posts');
   }
 
   const handleDelete = async (id) => {
@@ -71,7 +71,10 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path='/posts/:id'>
-        <PostDetail posts={posts} comments={comments}/>
+        <PostDetail
+          posts={posts}
+          comments={comments}
+          handleCreate={handleCreate}/>
       </Route>
       <Route path='/comments/id'>
         <Comments
