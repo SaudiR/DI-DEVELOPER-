@@ -6,8 +6,9 @@ App {
 }
 
 body {
-  background-color: grey;
+  background-color: #f2e8cf;
   font-family: 'Share Tech', sans-serif;
+  color: #050401;
 }
 
 .post-content {
@@ -24,6 +25,8 @@ p {
   font-size: 25px;
   text-decoration: none;
 }
+
+
 
 
 

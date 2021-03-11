@@ -7,14 +7,18 @@ export default function Posts(props) {
 
   return (
     <>
-      <h3>Posts</h3>
+      <h3>Click image to read more.</h3>
+  
+    <div className="image-cards">
+  
       {posts.map((post, key) => (
         <>
-          <Link to={`/posts/${post.id}`}><img src={post.image_url} /></Link>
+          <Link className="image-link" to={`/posts/${post.id}`}><img src={post.image_url} /></Link>
             <p key={post.id}></p>
        </>
-        
+       
       ))}
+      </div>
     </>
   )
 }

@@ -1,14 +1,20 @@
 img {
+  height: 40vh;
+  width: 40vw; 
   display: flex;
-  justify-content: center, space-between;
-  align-self: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  text-decoration: none;
-  text-align: center;
-  align-self: flex-start;
-  height: 10%;
-  width: 30%;
-  margin: 30px;
-  /* padding: 10px 10px 10px 10px; */
+  justify-content: center;
+  align-items: center;
+  margin: 10%; 
+  align-self: center;
+  border: 1px solid black;
+  position: relative;
+  object-fit: scale-down;
+  background-color: brown;
+}
+
+div.image-cards {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
 }

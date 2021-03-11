@@ -1,5 +1,5 @@
 .app-title {
-  color: black;
+  color: #050401;
   justify-content: flex-start;
   text-decoration: none;
   margin-left: 10px;
@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   border-style: solid;
   border-top: 1px black;
+  background-color: #d68c45;
 }
 
 .user-info {
@@ -36,6 +37,6 @@ header {
 
 a.posts-link {
   text-decoration: none;
-  color: black;
+  color:#050401;
   font-size: 21px;
 }
