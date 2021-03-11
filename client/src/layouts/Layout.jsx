@@ -20,11 +20,11 @@ export default function Layout(props) {
               </div>
             </div>
             :
-            <>
-            <Link to='/posts'>Posts</Link>
-              <Link to='/login'>Login</Link>
-              <Link to='/register'>Register</Link>
-            </>
+            <div className="header-nav">
+            <Link className="post-link" to='/posts'>Posts</Link>
+              <Link className="login-link" to='/login'>Login</Link>
+              <Link className="register-link" to='/register'>Register</Link>
+            </div>
         }
 
         <>

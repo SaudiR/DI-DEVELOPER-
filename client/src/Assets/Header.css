@@ -22,12 +22,10 @@ header {
 
 .user-info {
   display: flex;
-  /* margin: 10px 300px 0 300px; */
   float:right;
   position:absolute;
   right: 120px;
   align-items: center;
-  /* margin-top: -25px; */
 }
 
 .logout-button {
@@ -39,4 +37,12 @@ a.posts-link {
   text-decoration: none;
   color:#050401;
   font-size: 21px;
+}
+.header.nav {
+  display: flex;
+  float:right;
+  position:absolute;
+  right: 120px;
+  align-items: center;
+  text-decoration: none;
 }
