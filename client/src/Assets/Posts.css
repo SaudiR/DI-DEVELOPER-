@@ -1,6 +1,6 @@
 img {
-  height: 40vh;
-  width: 40vw; 
+  height: 20vh;
+  width: 20vw; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,5 +16,15 @@ img {
 div.image-cards {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-evenly;
+ justify-content: center;
+ justify-content: space-between;
+ height: 60vh;
+  width: 60vw; 
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.read-more {
+  text-align: center;
+  font-size: 20px;
 }

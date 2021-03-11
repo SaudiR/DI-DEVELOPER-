@@ -7,7 +7,7 @@ export default function Posts(props) {
 
   return (
     <>
-      <h3>Click image to read more.</h3>
+      <h3 className="read-more">Click image to read more.</h3>
   
     <div className="image-cards">
   
