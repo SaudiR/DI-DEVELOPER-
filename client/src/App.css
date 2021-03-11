@@ -1,5 +1,28 @@
 App {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: grey;
+  font-family: 'Share Tech', sans-serif;
+}
+
+.post-content {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 20px;
+  border-style: solid;
+  border-top: 1px black;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 

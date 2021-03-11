@@ -24,11 +24,11 @@ console.log(handleCreate)
       // history.push(`/posts/${postId}`)
     
     }}>
-      <h3>Add Comment</h3>
+      <h3 className="add-comment">Add Comment:</h3>
       <label>
-        <textarea
-          rows={10}
-          cols={78}
+        <textarea className="comment-area"
+          rows={8}
+          cols={50}
           type='text'
           name='content'
           value={content}
@@ -37,6 +37,9 @@ console.log(handleCreate)
       </label>
       <br />
       <button>Submit</button>
+    
     </form>
+  
+    
   )
 }

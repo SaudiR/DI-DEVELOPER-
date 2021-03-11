@@ -1,9 +1,8 @@
-h1.app-title {
-  display: flex;
+.app-title {
+  color: black;
   justify-content: flex-start;
   text-decoration: none;
-  /* border-style: solid;
-  border-top: 1px black; */
+  margin-left: 10px;
 }
 
 button.logout-button {
@@ -15,6 +14,28 @@ button.logout-button {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border-style: solid;
   border-top: 1px black;
+}
+
+.user-info {
+  display: flex;
+  /* margin: 10px 300px 0 300px; */
+  float:right;
+  position:absolute;
+  right: 120px;
+  align-items: center;
+  /* margin-top: -25px; */
+}
+
+.logout-button {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+a.posts-link {
+  text-decoration: none;
+  color: black;
+  font-size: 21px;
 }

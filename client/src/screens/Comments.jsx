@@ -8,7 +8,7 @@ export default function Comments(props) {
   console.log(id)
   return (
     <div>
-      <h3>Comments</h3>
+      <h3 className="comments">Comments</h3>
       <>
       {comments && comments.filter((comment) => comment.post_id === Number(id)).map((comment) => (
         <React.Fragment key={comment.id}>

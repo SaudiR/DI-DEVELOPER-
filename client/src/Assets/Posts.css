@@ -1,9 +1,14 @@
 img {
   display: flex;
-  justify-content: center, space-evenly;
+  justify-content: center, space-between;
   align-self: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 30vw;
-  height: 30vh;
+  text-decoration: none;
+  text-align: center;
+  align-self: flex-start;
+  height: 10%;
+  width: 30%;
+  margin: 30px;
+  /* padding: 10px 10px 10px 10px; */
 }

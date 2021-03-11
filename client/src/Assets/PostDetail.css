@@ -7,3 +7,23 @@ h3.post-title {
   display: flex;
   justify-content: left;
 }
+
+h3.add-comment {
+  display: flex;
+  justify-content: center;
+  font-weight: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}

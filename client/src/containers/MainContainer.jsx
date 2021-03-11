@@ -41,6 +41,8 @@ export default function MainContainer(props) {
     await destroyComment(id);
     setComments(prevState => prevState.filter((comment) => comment.id !== id))
     history.push("/posts")
+    window.alert("Comment was deleted. Please refresh page.")
+    
   } 
 
   const handleUpdate = async (id, formData) => {
