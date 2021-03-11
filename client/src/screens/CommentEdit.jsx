@@ -40,7 +40,7 @@ export default function CommentEdit(props) {
         history.push(`/posts/${commentPost.post_id}`)
     }}>
       <h3>Edit Comment</h3>
-      <label>Comment:
+      <label>
         <textarea
           rows={10}
           cols={78}
@@ -51,9 +51,10 @@ export default function CommentEdit(props) {
         />
       </label>
         <br />
-        <button>Save Comment</button>
+        <button className="save-comment" >Save Comment</button>
+        <button className="delete-button" onClick={() => handleDelete(id)}>Delete Comment</button>
       </form>
-      <button onClick={() => handleDelete(id)}>Delete Comment</button>
+      
   </>
   )
 }
