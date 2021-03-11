@@ -76,6 +76,24 @@ div.image-cards {
   
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  body {
+    background-color: silver;
+  }
+
+  header {
+    background-color: rgb(177, 217, 233);
+  }
+
+  div.image-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 200px;
+  margin-right: 200px;
+  height: 50vh;
+  width: 50vw; 
+  }
+
 
 }
